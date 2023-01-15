@@ -1,14 +1,67 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer"); // for gathering input
 const fs = require("fs"); // to read and write files
+const { BADHINTS } = require("dns");
 
 
-// TODO: Create an array of questions for user input
+const generateReadme = ({ title, githubUsername, email, license, description, installDependencies, tests, repoUsage, contributionInfo })=>
+    `#${title}
+     
+    INSERT GIT HUB LICENSE HERE
+    
+    ## Description
+    
+    ${description}
+    
+    ## Table of Contents
+        * [Installation](#installation)
+        * [Usage](#usage)
+        * [License](#license)
+        * [Contributing](#contributing)
+        * [Tests](#tests)
+        * [Questions](#questions)
+        
+    
+    ## Installation
+
+    To install the required dependencies, run the command below
+    
+    ````bash
+    ${installDependencies}
+    ````
+    ##Usage
+
+    ${repoUsage}
+
+    ##License
+
+    
+    This project is licensed under the ${license}
+
+    ##Contributing
+
+    ${contributionInfo}
+
+    ##Tests
+
+    Use the following command to run tests
+
+    ````bash
+    ${tests}
+    
+    ##Questions
+
+    Any questions regarding this repo can be sent to me directly at ${email}
+    Github Username: ${githubUsername}
+    
+    ```
+
+// question array of objects
 const questions = [
     {
-        type: 'input',
-        message: 'What is the name of your project?',
-        name: 'title',
+        type: 'input', // type of input
+        message: 'What is the name of your project?', // question text
+        name: 'title', // where the input is stored
     },
     {
         type: 'input',
@@ -58,7 +111,11 @@ const questions = [
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+const init = () => {
+    inquirer.prompt(questions).then((answers)=> writeToFile('README.md', generateReadme(answers)))
+    .then(()=> console.log('Successfully created README.md'))
+    .catch((error)=> console.error(err));
+};
 
 // Function call to initialize app
 init();
