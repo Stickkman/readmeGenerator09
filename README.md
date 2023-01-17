@@ -1,9 +1,9 @@
-# readme generator 09
+# 
 INSERT GIT HUB LICENSE HERE
     
 ## Description
     
-it creats a readme dynamically from stuff for use in projects
+
     
 ## Table of Contents
 * [Installation](#installation)
@@ -18,11 +18,11 @@ it creats a readme dynamically from stuff for use in projects
 
 To install the required dependencies, run the command below
         
-npm i
+
     
 ## Usage
 
-run npm i first to install node modules then follow prompts
+
 
 ## License
     
@@ -30,18 +30,19 @@ This project is licensed under the MIT
 
 ## Contributing
 
-You can contribute by emailing me 
+
 
 ## Tests
 
 Use the following command to run tests
   
- npm tests
+ 
     
 ## Questions
 
-Any questions regarding this repo can be sent to me directly at Stickkman@gmail.com
+Any questions regarding this repo can be sent to me directly at 
 
-Github Username: Stickkman
+Github Username: 
 
-GitHub Profile Link: [https://github.com/Stickkman](https://github.com/Stickkman)
+GitHub Profile Link: [https://github.com/](https://github.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

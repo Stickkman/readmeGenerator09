@@ -2,6 +2,11 @@
 const inquirer = require("inquirer"); // for gathering input
 const fs = require("fs"); // to read and write files
 const util = require("util");
+const generateMarkdown = require("./utils/generateMarkdown");
+
+
+
+
 
 //contains template literal for readme generation
 const generateReadme = ({ title, githubUsername, email, license, description, installDependencies, tests, repoUsage, contributionInfo })=>
@@ -109,6 +114,8 @@ const questions = [
 
 const writeToFile = (fileName, data) => {
 fs.writeFile(fileName, data, (err)=> err ? console.log(err) : console.log('1Successfully created README.md'));
+const licenseCode = generateMarkdown.renderLicenseBadge(); //appends license badge/link code to written readme file
+fs.appendFile('README.md', licenseCode, (err)=> err ? console.log(err) : console.log('1Successfully created README.md'));
 }
 
 // TODO: Create a function to initialize app
