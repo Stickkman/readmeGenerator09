@@ -1,65 +1,14 @@
 // TODO: Include packages needed for this application
-const inquirer = require("inquirer"); // for gathering input
+const inquirer = require("inquirer"); // import inquirer package
 const fs = require("fs"); // to read and write files
-const util = require("util");
+const util = require("util"); 
 const generateMarkdown = require("./utils/generateMarkdown");
 
 
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! <MOVE README GENERATION TO GENERATEMARKDOWN> !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
-
-//contains template literal for readme generation
-const generateReadme = ({ title, githubUsername, email, license, description, installDependencies, tests, repoUsage, contributionInfo })=>
-`# ${title}
-INSERT GIT HUB LICENSE HERE
-    
-## Description
-    
-${description}
-    
-## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
-        
-    
-## Installation
-
-To install the required dependencies, run the command below
-        
-${installDependencies}
-    
-## Usage
-
-${repoUsage}
-
-## License
-    
-This project is licensed under the ${license}
-
-## Contributing
-
-${contributionInfo}
-
-## Tests
-
-Use the following command to run tests
-  
- ${tests}
-    
-## Questions
-
-Any questions regarding this repo can be sent to me directly at ${email}
-
-Github Username: ${githubUsername}
-
-GitHub Profile Link: [https://github.com/${githubUsername}](https://github.com/${githubUsername})
-`
-
-// question array of objects
+// array of questions 
 const questions = [
     {
         type: 'input', // type of input
@@ -79,7 +28,7 @@ const questions = [
     {
         type: 'list',
         message: 'Select License type from list?',
-        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'NONE'],
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD', 'NONE'],
         name: 'license',
     },
     {
@@ -113,13 +62,16 @@ const questions = [
 // TODO: Create a function to write README file
 
 const writeToFile = (fileName, data) => {
-fs.writeFile(fileName, data, (err)=> err ? console.log(err) : console.log('1Successfully created README.md'));
-const licenseCode = generateMarkdown.renderLicenseBadge(); //appends license badge/link code to written readme file
+
+    fs.writeFile(fileName, data, (err)=> err ? console.log(err) : console.log('1Successfully created README.md'));
+const licenseCode = generateMarkdown.renderLicenseBadge();
+ //appends license badge/link code to written readme file
 fs.appendFile('README.md', licenseCode, (err)=> err ? console.log(err) : console.log('1Successfully created README.md'));
 }
 
 // TODO: Create a function to initialize app
 const init = () => {
+    
     inquirer.prompt(questions).then((answers)=> writeToFile('README.md', generateReadme(answers)))
     .then(()=> console.log('2Successfully created README.md'))
     .catch((error)=> console.error(error));
