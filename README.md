@@ -13,6 +13,7 @@ Handy program to quickly create a readme file dynamically generated from inquire
 ## Screenshots-Videos
 Video Demo -> [*Video-Demonstration-Link*](https://drive.google.com/file/d/1pWE4ZEX0AYAOu057vXdhiOgH0oiZ011Y/view)
 
+ScreenShot Below
 ![Application Demo Screenshot](https://github.com/Stickkman/readmeGenerator09/blob/main/screenshot/screenshot.jpg?raw=true)
 ## Installation
 npm install
