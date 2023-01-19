@@ -67,8 +67,6 @@ function generateMarkdown(data) {
   markdowns += "## Usage\n";
   markdowns += data.repoUsage + "\n";
   //license
-
-
   markdowns += renderLicenseSection(data.license) +"\n";
   //Contribution
   markdowns += "## Contributing\n";
@@ -79,17 +77,17 @@ function generateMarkdown(data) {
   //Questions
   markdowns += "## Questions\n";
   markdowns += "Any questions regarding this repo can be sent to me directly at " + data.email +"\n";
-  markdowns += "Github Username: " + data.githubUsername + "\n";
-  markdowns += "Github Profle Link: [https://github.com/" + data.githubUsername + "](https://github.com/"+data.githubUsername + "\n";
+  markdowns += "\nGithub Username: " + data.githubUsername + "\n";
+  markdowns += "\nGithub Profle Link: (https://github.com/"+data.githubUsername + ")" + "\n";
 
 return markdowns;
 
 }
-
+//exports
 module.exports = {renderLicenseBadge};
 module.exports = generateMarkdown; 
   
-// vv-- Alternate generate code -vv for tweaks
+// vv-- Alternate generate code -vv for tweaks if needed later
 // ## Description
     
 // ${data.description}

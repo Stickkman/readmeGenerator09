@@ -1,5 +1,5 @@
-# 
-![License Type](https://shields.io/badge/license-BSD-blue)
+# readme generator
+![License Type](https://shields.io/badge/license-MIT-blue)
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -8,20 +8,22 @@
 * [Tests](#tests)
 * [Questions](#questions)
 ## Description
-
+it does things
 ## Installation
-
+npm i
 ## Usage
-
+that it does things
 ## License
-This license is covered under the BSD
- for more information vist https://opensource.org/licenses/BSD-3-Clause
+This license is covered under the MIT
+ for more information visit https://mit-license.org/
 
 ## Contributing
-
+email
 ## Tests
-
+npm test
 ## Questions
-Any questions regarding this repo can be sent to me directly at 
-Github Username: 
-Github Profle Link: [https://github.com/](https://github.com/
+Any questions regarding this repo can be sent to me directly at stickkman@gmail.com
+
+Github Username: stickkman
+
+Github Profle Link: (https://github.com/stickkman)
