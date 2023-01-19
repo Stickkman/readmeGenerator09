@@ -1,10 +1,5 @@
 # 
-INSERT GIT HUB LICENSE HERE
-    
-## Description
-    
-
-    
+![License Type](https://shields.io/badge/license-BSD-blue)
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -12,37 +7,21 @@ INSERT GIT HUB LICENSE HERE
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
-        
-    
+## Description
+
 ## Installation
 
-To install the required dependencies, run the command below
-        
-
-    
 ## Usage
 
-
-
 ## License
-    
-This project is licensed under the MIT
+This license is covered under the BSD
+ for more information vist https://opensource.org/licenses/BSD-3-Clause
 
 ## Contributing
 
-
-
 ## Tests
 
-Use the following command to run tests
-  
- 
-    
 ## Questions
-
 Any questions regarding this repo can be sent to me directly at 
-
 Github Username: 
-
-GitHub Profile Link: [https://github.com/](https://github.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Github Profle Link: [https://github.com/](https://github.com/
