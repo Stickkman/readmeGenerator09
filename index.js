@@ -5,7 +5,7 @@ const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! <MOVE README GENERATION TO GENERATEMARKDOWN> !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
 
 // array of questions 
@@ -28,7 +28,7 @@ const questions = [
     {
         type: 'list',
         message: 'Select License type from list?',
-        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD', 'NONE'],
+        choices: ['MIT', 'APACHE_2.0', 'GPL_3.0', 'BSD', 'NONE'],
         name: 'license',
     },
     {
@@ -62,20 +62,17 @@ const questions = [
 // TODO: Create a function to write README file
 
 const writeToFile = (fileName, data) => {
-
-    fs.writeFile(fileName, data, (err)=> err ? console.log(err) : console.log('1Successfully created README.md'));
-const licenseCode = generateMarkdown.renderLicenseBadge();
- //appends license badge/link code to written readme file
-fs.appendFile('README.md', licenseCode, (err)=> err ? console.log(err) : console.log('1Successfully created README.md'));
+    
+    fs.writeFile(fileName, data, (err)=> err ? console.log(err) : console.log('Successfully created README.md'));
+    
 }
 
 // TODO: Create a function to initialize app
 const init = () => {
     
-    inquirer.prompt(questions).then((answers)=> writeToFile('README.md', generateReadme(answers)))
-    .then(()=> console.log('2Successfully created README.md'))
-    .catch((error)=> console.error(error));
-};
+    inquirer.prompt(questions).then(answers => writeToFile('README.md', generateMarkdown(answers)))
+        .catch((error)=> console.error(error));
+}
 
 // Function call to initialize app
 init();
