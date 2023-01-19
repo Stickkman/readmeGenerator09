@@ -61,9 +61,9 @@ function generateMarkdown(data) {
   markdowns += "## Description\n"
   markdowns += data.description + "\n";
   //installation
-  markdowns += "## Installation\n";
+  markdowns += "## Installation\n"; 
   markdowns += data.installDependencies + "\n";
-  //usage
+   //usage
   markdowns += "## Usage\n";
   markdowns += data.repoUsage + "\n";
   //license
