@@ -7,16 +7,21 @@
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
+* [Screenshots-Videos](#screenshots-videos)
 ## Description
-Handy program to quickly create a readme file dynamically generated from inquirer prompts
+Handy program to quickly create a readme file dynamically generated from inquirer prompts.
+## Screenshots-Videos
+![*Video-Demonstration*](https://drive.google.com/file/d/1pWE4ZEX0AYAOu057vXdhiOgH0oiZ011Y/view)
+![Application Demo Screenshot](https://github.com/Stickkman/readmeGenerator09/blob/main/assets/screenshot/screenshot.jpg?raw=true)
 ## Installation
 npm install
 ## Usage
 Please make sure you have node.js installed and run npm i from the command line to install needed dependencies.
+Then simply follow the prompts to enter the necessary information.  If you do not care to add a license, select 'NONE'
+when prompted.
 ## License
 This license is covered under the MIT
  for more information visit https://mit-license.org/
-
 ## Contributing
 If you would like to contribute please send me an email.
 ## Tests
@@ -27,3 +32,5 @@ Any questions regarding this repo can be sent to me directly at Stickkman@gmail.
 Github Username: Stickkman
 
 Github Profle Link: (https://github.com/Stickkman)
+
+
