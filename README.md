@@ -11,8 +11,8 @@
 ## Description
 Handy program to quickly create a readme file dynamically generated from inquirer prompts.
 ## Screenshots-Videos
-![*Video-Demonstration*](https://drive.google.com/file/d/1pWE4ZEX0AYAOu057vXdhiOgH0oiZ011Y/view)
-![Application Demo Screenshot](https://github.com/Stickkman/readmeGenerator09/blob/main/assets/screenshot/screenshot.jpg?raw=true)
+[*Video-Demonstration*](https://drive.google.com/file/d/1pWE4ZEX0AYAOu057vXdhiOgH0oiZ011Y/view)
+![Application Demo Screenshot](https://github.com/Stickkman/readmeGenerator09/blob/main/screenshot/screenshot.jpg?raw=true)
 ## Installation
 npm install
 ## Usage
